@@ -28,7 +28,7 @@
             android:orientation="vertical"
             android:padding="15dp">
             <TextView
-                android:id="@+id/name"
+                android:id="@+id/dec"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="name"
@@ -36,7 +36,7 @@
                 android:textColor="#fff"
                 android:textSize="26sp"/>
             <TextView
-                android:id="@+id/dec"
+                android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"

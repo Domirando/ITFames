@@ -50,7 +50,7 @@ public class ProductAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             name.setText(product.getName());
 
             TextView dec = ((ProductViewHolder) holder).dec;
-            dec.setText(String.valueOf(product.getDec()));
+            dec.setText(String.valueOf(product.getName()));
 
             CardView cardView = ((ProductViewHolder) holder).cardView;
             cardView.setOnClickListener(view -> {
@@ -72,8 +72,8 @@ public class ProductAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
             this.view = v;
 
             fon = view.findViewById(R.id.fon);
-            name = view.findViewById(R.id.name);
-            dec = view.findViewById(R.id.dec);
+            name = view.findViewById(R.id.dec);
+            dec = view.findViewById(R.id.name);
             cardView = view.findViewById(R.id.card);
         }
 

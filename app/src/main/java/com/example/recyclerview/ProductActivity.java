@@ -19,14 +19,12 @@ public class ProductActivity extends AppCompatActivity {
 
         img =findViewById(R.id.img);
         name =findViewById(R.id.p_name);
-        dec =findViewById(R.id.dec);
-        desc =findViewById(R.id.p_desc);
+        desc =findViewById(R.id.dec);
 
         Product product = (Product) getIntent().getSerializableExtra("product");
 
         img.setImageResource(product.getImg());
         name.setText(product.fullDesc());
-        dec.setText(String.valueOf(product.fullDesc()));
         desc.setText(product.getName());
 
     }
