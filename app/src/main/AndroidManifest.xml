@@ -13,6 +13,12 @@
             android:name=".ProductActivity"
             android:exported="false" />
         <activity
+            android:name=".Adminctitvity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLogin"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false">
         </activity>

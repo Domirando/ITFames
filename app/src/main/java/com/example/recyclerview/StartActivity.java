@@ -14,8 +14,13 @@ public class StartActivity extends AppCompatActivity {
         setContentView(R.layout.activity_start);
     }
 
-    public void visaProgress(View view) {
+    public void user(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+    public void admin(View view) {
+        Intent intent = new Intent(this, AdminLogin.class);
+        startActivity(intent);
+    }
+
 }

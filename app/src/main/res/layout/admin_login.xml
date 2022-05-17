@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#327ba8">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/titlelogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:text="Login"
+            android:textColor="@color/purple_700"
+            android:textSize="28sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/login"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titlelogin"
+            android:layout_marginBottom="20dp"
+            android:autofillHints="username"
+            android:hint="Login..."
+            android:inputType="textPersonName"
+            android:padding="5dp"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:autofillHints="password"
+            android:layout_below="@+id/login"
+            android:layout_width="220dp"
+            android:id="@+id/pass"
+            android:hint="Password..."
+            android:inputType="numberPassword"
+            android:padding="5dp"
+            tools:ignore="HardcodedText"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:text="Show"
+            android:id="@+id/check"
+            android:layout_marginVertical="20dp"
+            android:layout_below="@id/pass"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/check"
+            android:background="@drawable/button"
+            android:onClick="admin"
+            android:paddingHorizontal="50dp"
+            android:id="@+id/btn"
+            android:text="Login as Admin"
+            android:textColor="@android:color/white"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn"
+            android:text=""
+            android:layout_marginTop="15dp"
+            android:id="@+id/error"
+            android:textColor="#FF0000"
+            android:textStyle="italic"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+</RelativeLayout>
