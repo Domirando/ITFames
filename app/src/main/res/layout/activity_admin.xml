@@ -55,7 +55,7 @@
             tools:ignore="Autofill,HardcodedText,TextFields"/>
         <TextView
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btn"
+            android:layout_below="@+id/desc"
             android:layout_width="220dp"
             android:text=""
             android:layout_centerHorizontal="true"
@@ -66,12 +66,25 @@
         <Button
             android:layout_width="230dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/desc"
+            android:layout_below="@+id/res"
             android:background="@drawable/button"
             android:onClick="add"
             android:paddingHorizontal="50dp"
             android:id="@+id/btn"
             android:text="Add"
+            android:layout_marginBottom="15dp"
+            android:textColor="@android:color/white"
+            tools:ignore="MissingConstraints" />
+        <Button
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn"
+            android:background="@drawable/button"
+            android:onClick="back"
+            android:visibility="invisible"
+            android:paddingHorizontal="50dp"
+            android:id="@+id/btn2"
+            android:text="Go back!"
             android:textColor="@android:color/white"
             tools:ignore="MissingConstraints" />
 
